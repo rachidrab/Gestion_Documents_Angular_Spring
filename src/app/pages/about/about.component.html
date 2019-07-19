@@ -1,0 +1,136 @@
+
+
+
+
+
+
+
+
+
+
+<!--
+  <h2>Commentaires</h2>
+  <table class="table table-dark">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Message</th>
+      <th scope="col">Date</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let element of comments">
+      <th scope="row" >1</th>
+      <td>{{element.message}}</td>
+      <td>{{element.date|date: 'dd/MM/yyyy     :     hh:mm:ss'}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+
+  <div class="input-group badge-dark">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Votre commentaire</span>
+    </div>
+    <input type="text" aria-label="First name" class="form-control" [(ngModel)]="commentaire.message">
+    <button (click)="onAddCommentaire()" > Ajouter un commentaire </button>
+  </div>
+</div>
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+
+
+<div class="col-md-12 col-lg-6 mb-4 align-items-stretch">
+  <div class="card border-0 rounded-0 h-100">
+    <div class="card-title mb-1 p-3">
+      <h5>Commentaires</h5>
+    </div>
+    <div class="card-body">
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th scope="col">Message</th>
+          <th scope="col">Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let element of comments">
+          <td>{{element.message}}</td>
+          <td><span class="badge badge-primary rounded-0 p-1">{{element.date|date: 'dd/MM/yyyy     :     hh:mm:ss'}}</span></td>
+        </tr>
+        </tbody>
+      </table>
+
+
+        <div class="form-group">
+          <label>Ajouter un commentaire</label>
+          <input type="text" class="form-control rounded-0"
+                 placeholder="Enter comment" [(ngModel)]="commentaire.message">
+          <small id="emailHelp" class="form-text text-muted">Write something, then submit it.</small>
+        </div>
+
+
+        <button type="button" class="btn btn-lightning rounded-0 mb-2 mr-2" (click)="onAddCommentaire()">Ajouter un commentaire</button>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+  <div class="col-md-12 col-lg-6 mb-4 align-items-stretch">
+    <div class="card border-0 rounded-0 h-100">
+      <div class="card-title mb-1 p-3">
+        <h5>Contacts</h5>
+      </div>
+      <div class="card-body">
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th scope="col">Nom</th>
+            <th scope="col">Email</th>
+            <th scope="col">Telephone</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>{{informations.nom}}</td>
+            <td>{{informations.email}}</td>
+            <td>@{{informations.tel}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
