@@ -22,7 +22,5 @@ ng serve
 Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Author
-Mohamed Azouaoui
+Rachid RABOU
 
-## License
-This code is released under the MIT license.
